@@ -36,7 +36,7 @@ function Modal({...props})
     });
     return(
         <>
-        <div className="absolute flex w-full h-full items-center justify-center" style={{display: props.displayModalAdd}} >
+        <div className="fixed flex w-full h-full items-center justify-center" style={{display: props.displayModalAdd}} >
             <div className="bg-gray-500  w-full h-full opacity-60" onClick={()=>{props.setDisplayModalAdd('none')}}>
             </div>
             <div className="absolute bg-white rounded-lg " style={{width: '700px', height: '600px'}}>

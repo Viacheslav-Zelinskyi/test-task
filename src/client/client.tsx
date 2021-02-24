@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import editImg from '../images/edit.svg'
+import ModalEdit from '../modal/modalEdit'
 
 function Client({...props})
 {
+  const [displayModalEdit, setDisplayModalEdit] = useState('none');
     return(
+      <>
+          <ModalEdit displayModalEdit={displayModalEdit} setDisplayModalEdit={setDisplayModalEdit} id={props.id} firstName={props.firstName} lastName={props.lastName} imgURL={props.imgURL} phone={props.phone}></ModalEdit>
              <tr>
                 <td className="px-6 py-4 whitespace-nowrap text-base">
                   {props.id}
@@ -29,12 +33,13 @@ function Client({...props})
                     </div>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                  <button type="button" onClick={()=>{props.setDisplayModalEdit('flex')}}  className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-yellow-500 hover:bg-yellow-700 focus:outline-none">
+                  <button type="button" onClick={()=>{setDisplayModalEdit('flex')}}  className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-yellow-500 hover:bg-yellow-700 focus:outline-none">
                     <img src={editImg} className="mr-2" alt=""></img>
                     Edit
                   </button>
                 </td>
             </tr>
+      </>
     )
 }
 
