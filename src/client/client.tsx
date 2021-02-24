@@ -5,14 +5,17 @@ function Client({...props})
 {
     return(
              <tr>
-                <td className="px-6 py-4 whitespace-nowrap">
+                <td className="px-6 py-4 whitespace-nowrap text-base">
                   {props.id}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">
                   <div className="flex items-center">
-                    <div className="flex-shrink-0 h-10 w-10">
-                      <img src={props.imgURL} alt="" className="h-10 w-10 rounded-full"/>
-                    </div>
+                    <div className="flex-shrink-0 h-11 w-12">
+                      {
+                        props.imgURL!=null ? <img src={props.imgURL} alt="" className={props.className
+                        }/> : <p>0</p>
+                      }
+                      </div>
                     <div className="ml-4">
                       <div className="text-base font-medium text-gray-900">
                         {props.firstName+' '+props.lastName}
@@ -21,7 +24,7 @@ function Client({...props})
                   </div>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">
-                  <div className="text-sm text-gray-900">
+                  <div className="text-base text-gray-900">
                       {props.phone}
                     </div>
                 </td>
