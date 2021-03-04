@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/test-task/static/css/main.de05964b.chunk.css",
+    "main.js": "/test-task/static/js/main.d882fdbb.chunk.js",
+    "main.js.map": "/test-task/static/js/main.d882fdbb.chunk.js.map",
+    "runtime-main.js": "/test-task/static/js/runtime-main.9a8ceccb.js",
+    "runtime-main.js.map": "/test-task/static/js/runtime-main.9a8ceccb.js.map",
+    "static/js/2.f0fa00cf.chunk.js": "/test-task/static/js/2.f0fa00cf.chunk.js",
+    "static/js/2.f0fa00cf.chunk.js.map": "/test-task/static/js/2.f0fa00cf.chunk.js.map",
+    "static/js/3.c05e5490.chunk.js": "/test-task/static/js/3.c05e5490.chunk.js",
+    "static/js/3.c05e5490.chunk.js.map": "/test-task/static/js/3.c05e5490.chunk.js.map",
+    "index.html": "/test-task/index.html",
+    "static/css/main.de05964b.chunk.css.map": "/test-task/static/css/main.de05964b.chunk.css.map",
+    "static/js/2.f0fa00cf.chunk.js.LICENSE.txt": "/test-task/static/js/2.f0fa00cf.chunk.js.LICENSE.txt",
+    "static/media/edit.ede6d49c.svg": "/test-task/static/media/edit.ede6d49c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a8ceccb.js",
+    "static/js/2.f0fa00cf.chunk.js",
+    "static/css/main.de05964b.chunk.css",
+    "static/js/main.d882fdbb.chunk.js"
+  ]
+}
