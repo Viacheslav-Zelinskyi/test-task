@@ -12,8 +12,9 @@ type Profile = {
 function Modal({ ...props }) {
 	const { register, handleSubmit, errors } = useForm<Profile>();
 	const onSubmit = handleSubmit((data) => {
-		api(data.firstName, data.lastName, data.imgURL, data.phone);
+		api(data.firstName, data.lastName, data.phone, data.imgURL,);
 		props.setDisplayModalAdd('none');
+		window.location.reload();
 	});
 	return (
 		<>
